@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script src="{{ url_for('static', filename='js/smth.js') }}"></script>
+        
+<div class="flex justify-center text-5xl text-white font-mono font-semibold" id="kingdomtext">The Kingdom </div>
+<div class="flex justify-center text-3xl text-yellow-500 font-mono font-semibold">Antarctica </div>
+
+
+<div class="flex justify-center w-auto h-auto ">
+    <img class="h-auto w-auto absolute m-0 mr-36" src="/static/images/AntarcticaBlank.svg" alt="image description">
+<div class = "font-mono absolute my-56 font-semibold text-4 text-5xl" ><div id="areanumber" class="inline">5  </div> Million Km^2</div>
+      
+<div class = "relative translate-x-96 mt-52 right-20 h-6 rotate-90 w-3/12"><input type="range" min="0" max="14" step="1" id="continentslider" value="5" class="w-full"></div>
+
+{% endblock %}

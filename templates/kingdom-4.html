@@ -1,0 +1,23 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<script src="{{ url_for('static', filename='js/smth.js') }}"></script>
+
+
+<div class="h-screen fixed left-40 top-14">
+    <div class="font-mono text-5xl font-semibold text-white">Extreme Winds</div>
+    <div class="h-4/6 w-fit mt-5"><img src="/static/images/AntarcticaBlank.svg" class="h-full"></div>
+
+</div>
+
+<div class="border-8 border-yellow-500 h-4/6 w-96 right-96 top-36 absolute ">
+    <div class="ml-2 mt-2 text-2xl font-mono text-white">
+    <span class="underline font-semibold">Wind Speed</span> 
+    <br>Windspeeds can get much more intense. One December in 1960, winds reached an estimated 225-250 kph.
+    <br><br>Cold dense air slopes off of highland interior and can pick up turbulence and high velocity
+    <br><br> This causes snow to be picked up as well.
+    
+</div>
+
+{% endblock %}
