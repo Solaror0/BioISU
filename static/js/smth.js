@@ -2,13 +2,18 @@ window.onload=function(){
     const kingdomtext = document.getElementById("kingdomtext");
     const continentSlider = document.getElementById("continentslider");
     const areaNumber = document.getElementById("areanumber");
+  
     continentSlider.addEventListener("input",print);
+  
     kingdomtext.addEventListener("click",hide);
     areaNumber.addEventListener("click",hide);
+    
 
 
     
 }
+
+
 
 function print(){
     let continentSlider =  document.getElementById("continentslider");

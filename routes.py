@@ -25,6 +25,10 @@ def kingdom2():
 @app.route('/kingdom-3')
 def kingdom3():
     return render_template('kingdom-3.html')
+ 
+@app.route('/kingdom-4')
+def kingdom4():
+    return render_template('kingdom-4.html')
 
 
 if __name__ == '__main__':
