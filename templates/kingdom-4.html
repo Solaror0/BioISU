@@ -8,15 +8,24 @@
 <div class="h-screen fixed left-60 top-14 w-fit cursor-[url(/static/images/WindTrackerCursorSmall.png),_pointer]">
     <div class="font-mono text-5xl font-semibold text-white">Wind Speed Simulation</div>
     <div class="h-4/6 w-fit mt-5"><img src="/static/images/AntarcticaBlank.svg" class="h-full"></div>
-    <div class="h-60 w-80 bg-red-400 translate-x-52 -translate-y-60 fixed" id="medSpeedBox" value="5.5 m/s" ></div>
-    <div class="h-48 w-48 bg-red-300 translate-x-72 -translate-y-48 fixed" id="lowSpeedBox" value="7.1 m/s" ></div>
+
+    <div class="h-16 w-40 rotate-45 translate-x-16 -translate-y-48 fixed bg-red-700 z-20 opacity-0" id="superSpeedBox1"></div>
+    <div class="h-4/12 w-4/12 translate-x-8 -translate-y-full fixed" ><img src="/static/images/HeatMapHigh.png"  id="highSpeedBox"  class="h-full w-full -translate-y-10 opacity-0" ></div>
+    <div class="h-60 w-96 translate-x-36 -translate-y-96 fixed"><img src="/static/images/HeatMapMed.png" id="medSpeedBox" class="absolute h-96 w-96 -translate-y-10 opacity-0 " ></div>
+
+    <div class="h-48 w-48 translate-x-72 -translate-y-72 fixed"><img src="/static/images/HeatMapLow.png" id="lowSpeedBox" class="absolute h-auto w-auto opacity-0" ></div>
     
 </div>
 
-<div class="border-8 border-yellow-500 h-2/6 w-64 right-80 top-36 absolute ">
+<div class="border-8 border-yellow-500 h-3/6 w-64 right-80 top-36 absolute ">
     <div class="ml-2 mt-2 text-4xl font-mono text-white">
-    <span class="underline font-semibold">Wind Speed</span> 
-    <br><div class="text-center mt-10" id ="speedDisplay">19 m/s</div>
+    <span class="underline font-semibold">Wind Speed</span>
+    
+    <br><div class="text-center mt-10" id ="speedDisplay">19 m/s</div><br>
+    <div class="text-xl text-center text-red-400" id="lowSpeedText"><span >Found 5.5 m/s</span></div>
+    <div class="text-xl text-center text-red-400" id = "medSpeedText"><span >Found 8 m/s m/s</span></div>
+    <div class="text-xl text-center text-red-400" id = "highSpeedText" ><span >Found 13.9 m/s</span></div>
+    <div class="text-xl text-center text-red-400" id = "superSpeedText" ><span >Found 19.9 m/s</span></div>
     
 </div>
 </div>

@@ -30,6 +30,19 @@ def kingdom3():
 def kingdom4():
     return render_template('kingdom-4.html')
 
+ 
+@app.route('/cycle-1')
+def cycle1():
+    return render_template('cycle-1.html')
+
+ 
+@app.route('/cycle-2')
+def cycle2():
+    return render_template('cycle-2.html')
+
+@app.route('/cycle-3')
+def cycle3():
+    return render_template('cycle-3.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
