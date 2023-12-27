@@ -111,6 +111,11 @@ def comp4p5():
 def finish():
     return render_template('finish.html')
 
+@app.route('/matchgame')
+def matchgame():
+    return render_template('matchgame.html')
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)

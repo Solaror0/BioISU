@@ -932,6 +932,18 @@ video {
   top: 37%;
 }
 
+.left-\[\]{
+  left: ;
+}
+
+.left-\[30\%\]{
+  left: 30%;
+}
+
+.left-20{
+  left: 5rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -942,6 +954,10 @@ video {
 
 .z-30{
   z-index: 30;
+}
+
+.z-0{
+  z-index: 0;
 }
 
 .float-right{
@@ -1015,6 +1031,10 @@ video {
 
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .hidden{
@@ -1157,6 +1177,14 @@ video {
   height: 23%;
 }
 
+.h-\[75\%\]{
+  height: 75%;
+}
+
+.h-\[\%\]{
+  height: %;
+}
+
 .w-16{
   width: 4rem;
 }
@@ -1268,6 +1296,14 @@ video {
 
 .w-\[10\%\]{
   width: 10%;
+}
+
+.w-\[70\%\]{
+  width: 70%;
+}
+
+.w-\[50\%\]{
+  width: 50%;
 }
 
 .-translate-y-10{
@@ -1389,6 +1425,18 @@ video {
   cursor: url(/static/images/WindTrackerCursorSmall.png), pointer;
 }
 
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-rows-4{
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+}
+
+.grid-rows-3{
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
 .items-start{
   align-items: flex-start;
 }
@@ -1405,8 +1453,16 @@ video {
   justify-content: center;
 }
 
+.gap-3{
+  gap: 0.75rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-clip{
+  overflow: clip;
 }
 
 .rounded{
@@ -1484,6 +1540,11 @@ video {
 .border-yellow-700{
   --tw-border-opacity: 1;
   border-color: rgb(161 98 7 / var(--tw-border-opacity));
+}
+
+.border-green-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(74 222 128 / var(--tw-border-opacity));
 }
 
 .bg-blue-300{
@@ -1575,6 +1636,16 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-red-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.bg-blue-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+}
+
 .p-5{
   padding: 1.25rem;
 }
@@ -1599,6 +1670,10 @@ video {
 
 .font-pixel{
   font-family: Pixelify Sans, mono;
+}
+
+.font-serif{
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-2xl{
@@ -1806,6 +1881,14 @@ video {
 
 .hover\:opacity-100:hover{
   opacity: 1;
+}
+
+.hover\:opacity-0:hover{
+  opacity: 0;
+}
+
+.active\:opacity-0:active{
+  opacity: 0;
 }
 
 
