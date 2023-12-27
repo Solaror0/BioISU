@@ -4,11 +4,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def default():
-    return render_template('base.html')
-
-@app.route('/welcome')
-def main():
     return render_template('welcome.html')
+
+
 
 @app.route('/welcome-2')
 def welcome2():
