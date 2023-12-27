@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="fixed text-4xl text-white font-mono font-semibold top-[12%] left-[8%]"> Density Independent Factors</div>
+<div class="fixed w-[20%] h-[56%] border-4 border-yellow-500 top-[23%] left-[65%] animate-fadeRight">
+    <div class="mt-5 ml-2 mr-1 text-white font-mono">
+        Climate change has a large effect on reducing ice mass and krill populations.
+        <br><br>
+        On the West Antarctic Peninsula, sea ice covers 40% less area than it did 26 years ago
+        <br><br>
+        The Emperor Penguin has seen colonies halved in size over the past 50 years.
+        Thin ice and harsh winds cause high amounts of egg/chick mortality. <sub>3</sub>
+    </div>
+</div>
+
+ <div  class="h-[50%] w-fit font-mono text-center text-white  font-normal border-2 border-yellow-500 fixed top-[27%] left-[5%] animate-fadeRight">
+        <img src="/static/images/realAntarcticReductionmap.png" class="h-full w-auto ">
+        <div>A map showing the rate of reduction in ice mass <br>in different parts of Antarctica<sub>1</sub></div>
+    </div>
+
+
+<div  class="h-[40%] w-fit font-mono text-center text-white text-md  font-normal border-2 border-yellow-500 fixed top-[30%] left-[35%] animate-fadeRight">
+    <img src="/static/images/pengDistributionMap.png" class="h-full w-auto ">
+    <div>This shows significant risk <br> to penguins west of the Ross Sea <sub>2</sub></div>
+</div>
+</div>
+
+
+<a href="/comp-2">
+    <button id="pageButton" class="bg-green-700 transition-colors ease-in-out duration-500 hover:bg-yellow-500 border-green-700 text-white text-3xl font-semibold font-mono py-2 px-4 border h-[10%] w-[13%] rounded z-30 bottom-[10%] right-[15%] fixed">
+        Proceed
+    </button>
+</a>
+
+
+{% endblock %}

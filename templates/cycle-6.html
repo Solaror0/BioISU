@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script src="{{ url_for('static', filename='js/cycle-4.js') }}"></script>
+
+<div class="flex w-screen h-screen fixed top-[15%] justify-center">
+    <img class="h-4/6 w-auto absolute" src="/static/images/grownPenguin.png" alt="image description"></div>
+
+<div class="bg-yellow-500 h-[3%] w-[20%] fixed bottom-[15%] left-[41%] animate-fadeRight"></div>
+<div class="text-xl font-semibold font-mono text-white bottom-[5%] fixed left-[37%] animate-fadeRight">45 inches tall, up to 88 pounds heavy<sub>1</sub></div>
+
+
+<div class="text-3xl font-semibold font-mono text-white top-[10%] fixed left-[15%] animate-fadeDown">
+    
+    Lifespan: 15-20 Years<sub>1</sub>
+    <br><span class="font-normal text-xl">Survival Rate: 95.1%</span>
+</div>
+
+<div class="h-screen">
+    <div></div>
+    
+    <div class="flex fixed items-start h-[40%] w-[20%] right-[15%] top-[50%] bg-blue-950 z-30">
+        <div class=" overflow-hidden border-4 h-[20%] border-yellow-500 w-[100%]  duration-300 ease-in-out hover:h-[70%] font-mono font-normal text-xl text-white">
+           <div class="ml-2 mt-2 font-normal"> <span class="font-semibold">Short Stiff Tail </span>
+            <br> The tail of a penguin<br>forms a tripod to balance <br>when the penguin shifts <br> back<sub>2</sub> 
+           </div>
+           
+        </div>
+    </div>
+    <div class="h-[1%] w-[12%] -rotate-45 bg-yellow-500 fixed bottom-[33%] right-[33%] z-20"></div>
+
+    <div class="flex fixed items-start h-[40%] w-[20%] right-[15%] top-[20%] bg-blue-950">
+        <div class=" overflow-hidden border-4 h-[20%] border-yellow-500 w-[100%]  duration-300 ease-in-out hover:h-[70%] font-mono font-normal text-xl text-white">
+           <div class="ml-2 mt-2 font-normal"> <span class="font-semibold">Specialized Bird Skeleton </span>
+            <br> A high gait, upright posture short neck and legs and long body<sub>2</sub><br> <br> Worthy of an emperor
+           </div>
+           
+        </div>
+    </div>
+    <div class="h-[1%] w-[12%] bg-yellow-500 fixed top-[20%] right-[35%] z-20"></div>
+
+    <div class="flex fixed items-start h-[40%] w-[20%] left-[15%] top-[35%] bg-blue-950">
+        <div class=" overflow-hidden border-4 h-[20%] border-yellow-500 w-[100%]  duration-300 ease-in-out hover:h-[75%] font-mono font-normal text-xl text-white">
+           <div class="ml-2 mt-2 font-normal"> <span class="font-semibold">BPM Variation</span>
+            <br> A resting BPM of 60-70, which goes up to 180-200 immediately before a dive to load oxygen and drops all the way to 20 in the water<sub>2</sub> 
+           </div>
+           
+        </div>
+    </div>
+    <div class="h-[1%] w-[12%] bg-yellow-500 fixed top-[40%] left-[35%]"></div>
+
+    <div class="flex fixed items-start h-[40%] w-[20%] left-[15%] top-[70%] bg-blue-950">
+        <div class=" overflow-hidden border-4 h-[20%] border-yellow-500 w-[100%]  duration-300 ease-in-out hover:h-[60%] font-mono font-normal text-xl text-white">
+           <div class="ml-2 mt-2 font-normal"> <span class="font-semibold">Strong Feet</span>
+            <br>Powerful feet help grip the snow and ice especially when emerging from ocean<sub>2</sub>
+           </div>
+           
+        </div>
+    </div>
+    <div class="h-[1%] w-[12%] bg-yellow-500 fixed top-[75%] left-[35%]"></div>
+   
+</div>
+
+<a href="/cycle-7">
+    <button id="pageButton" class="bg-green-700 transition-colors ease-in-out duration-500 hover:bg-yellow-500 border-green-700 text-white text-3xl font-semibold font-mono py-2 px-4 border h-[10%] w-[13%] rounded z-30 bottom-[12%] right-[7%] fixed">
+        Proceed
+    </button>
+</a>
+
+{% endblock %}

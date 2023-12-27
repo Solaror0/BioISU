@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script src="{{ url_for('static', filename='js/popu-1.js') }}"></script>
+<div  id="uniformDist" class="animate-fadeDown h-[30%] w-fit font-mono text-center text-white font-semibold border-2 border-yellow-500 fixed top-[12%] left-[25%]">
+    <img src="/static/images/UniformPop.png" class="h-full w-auto ">
+    <span class="items-end">Uniform Distribution</span>
+</div>
+
+<div   id="randomDist" class="animate-fadeDown h-[30%] w-fit font-mono text-center text-white font-semibold border-2 border-yellow-500 fixed top-[12%] left-[42%]">
+    <img src="/static/images/RandomPop.png" class="h-full w-auto ">
+    <span class="items-end">Random Distribution</span>
+</div>
+
+<div id="clumpedDist" class="animate-fadeDown h-[30%] w-fit font-mono text-center text-white font-semibold border-2 border-yellow-500 fixed top-[12%] left-[59%]">
+    <img src="/static/images/ClusteredPop.png" class="h-full w-auto ">
+    <span class="items-end">Clumped Distribution</span>
+</div>
+
+<div class="animate-fadeDown w-[40%] h-[35%] border-8 border-yellow-500 fixed top-[55%] left-[29%] text-white font-mono  text-xl">
+    <span class="mt-5 ml-5">
+        Population of the Penguin: approx. 260 000+ breeding pairs <sub>1</sub>
+        <br> There are approximately 50 colonies, with 6 colonies making up 60000 breeding pairs. <sub>2</sub>
+        Because of their region, penguins are circumpolar. They breed around the pole's circumference.<sub>3</sub>
+    </span>
+    <span class="mt-5 ml-10 text-green-500 text-lg">
+        <br>
+        Based on the given information, click on a distribution pattern to guess it!
+    </span>
+</div>
+
+<a href="/popu-2">
+    <button id="pageButton" class="bg-green-700 transition-colors ease-in-out duration-500 hover:bg-yellow-500 border-green-700 text-white text-3xl font-semibold font-mono py-2 px-4 border h-[10%] w-[13%] rounded z-30 bottom-[12%] right-[7%] fixed">
+        Proceed
+    </button>
+</a>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+<div class="flex justify-center w-screen h-screen fixed top-[20%]">
+    <img class="h-4/6 w-auto absolute animate-wiggle mr-10" src="/static/images/pengGettingOlder.png" alt="image description"></div>
+
+<div class="border-8 border-yellow-500 h-[70%] w-[30%] fixed top-[20%] animate-fadeRight">
+    <div class="text-white font-mono font-semibold text-xl mt-2 ml-5 p-5">
+        Average Fledging Age: 5 Months <br><br> Average Time To Independence: 5 Months
+        <br><br>Penguins reach reproductive maturity in 4-6 Years
+        <br><br> Eggs and Young are held in a fold of skin and sit on their parents feet! This means no nest is needed.
+        <br><br> Males can make a type of "milk" to feed the baby while the female is out hunting.<sub>1</sub>
+    </div>
+</div>
+
+<div class="border-8 border-yellow-500 h-[70%] w-[30%] fixed top-[20%] right-[5%] float-right animate-fadeRight">
+    <div class="text-white font-mono font-semibold text-xl mt-2 ml-5 p-5">
+       <span class="underline"> Mortality Rate</span>
+       <br><br>Chicks have a 90% mortality rate in the first year
+       <br><br>This can be due to predatory birds such as skuas, sheathbills, and giant petrels.
+       <br><br> Climate change is also a factor as eggs need a stable flattened space.<sub>1</sub>
+    </div>
+    
+</div>
+
+<a href="/cycle-6">
+    <button id="pageButton" class="bg-green-700 transition-colors ease-in-out duration-500 hover:bg-yellow-500 border-green-700 text-white text-3xl font-semibold font-mono py-2 px-4 border h-[10%] w-[13%] rounded z-30 bottom-[12%] right-[7%] fixed">
+        Proceed
+    </button>
+</a>
+{% endblock %}

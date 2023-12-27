@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script src="{{ url_for('static', filename='js/popu-1.js') }}"></script>
+<div  id="uniformDist" class="animate-fadeRight h-[50%] w-fit font-mono text-center text-white font-semibold border-2 border-yellow-500 fixed top-[23%] left-[22%]">
+    <img src="/static/images/pengDistributionMap.png" class="h-full w-auto ">
+    <div>Where: Ice shelves and steadfast ice on the <br>coast of Antarctica <sub>1</sub></div>
+</div>
+<div class="w-[20%] h-[50%] border-8 border-yellow-500 fixed top-[23%] left-[55%] animate-fadeRight">
+    <div class=" text-white font-mono  text-xl mt-5 ml-5">
+        Penguin huddles reform during blizzards. The colonies and clumping helps conserve body heat and also acts as protection from predators. <sub>2</sub>The first colony was discovered in 1902 and more are still being discovered.<sub>3</sub>
+    </div>
+</div>
+
+<a href="/comp-1">
+    <button id="pageButton" class="bg-green-700 transition-colors ease-in-out duration-500 hover:bg-yellow-500 border-green-700 text-white text-3xl font-semibold font-mono py-2 px-4 border h-[10%] w-[13%] rounded z-30 bottom-[12%] right-[25%] fixed">
+        Proceed
+    </button>
+</a>
+
+{% endblock %}

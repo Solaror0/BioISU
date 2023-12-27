@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<script src="{{ url_for('static', filename='js/comp-4.js') }}"></script>
+
+ <div  class="h-[80%] w-fit font-mono text-center text-white  font-normal  fixed top-[3%] left-[17%]">
+
+
+    <img src="/static/images/DS DSi - Pokemon Platinum - Battle Backgrounds (1).png" class="h-full w-auto animate-fadeRight">
+
+    <img src="/static/images/pokePeng.png" class="fixed left-[25%] top-[48%] h-[40%] w-auto animate-fadeRight">
+
+    <img src="/static/images/LeopardPoke.png" class="fixed left-[54%] top-[22%] h-[40%] w-auto animate-fadeRight">
+
+    <img src="/static/images/PengleonPokeName.png" class="fixed right-[18%] top-[52%] h-[20%] w-auto animate-fadeRight">
+    <img src="/static/images/LeopardPokeName.png" class="fixed left-[17%] top-[22%] h-[20%] w-auto animate-fadeRight">
+
+    <img src="/static/images/PokedexBox.png" class="fixed right-[1%] top-[18%] h-[70%] w-auto animate-fadeRight z-10">
+
+</div>
+
+<div class="right-[3%] fixed h-[30%] w-[13%] z-20 top-[39%]">
+    <div id="infoText" class="font-pixel text-black text-xl">
+        
+    </div>
+    <div id="useButton" class="hidden w-[5%] h-[5%] bg-purple-500 fixed text-black items-center justify-center rounded-xl border-4 border-black font-pixel right-[7%]  top-[65%] hover:bg-purple-600 ease-in-out duration-200">
+        Use!
+    </div>
+</div>
+
+<div class="w-[65%] h-[20%] bg-slate-400 fixed top-[79%] left-[17%] animate-fadeRight border-4 border-black">
+
+    <div class="w-[30%] h-[90%] fixed left-[2%] border-4 border-yellow-500 top-[4%] rounded-md overflow-hidden bg-gray-600">
+        <div class="bg-white h-[78%] w-[28%] rounded-lg fixed left-[3%] top-[10%] border-8 border-white-600 font-pixel text-lg text-black">
+            <div class="ml-2 mt-1">
+            Pengleon is being hunted from above in the water! What move should she use??
+            </div>
+        </div> 
+
+    </div>
+
+    <div class="h-[45%] w-[28%] rounded-xl bg-red-500 fixed left-[33%] top-[4%] border-red-700 border-4 flex justify-center items-center">  
+        <div id="redButton" class="h-[90%] w-[98%] bg-red-300 rounded-xl border-2 border-white text-center hover:bg-red-400 ease-in duration-200 ">
+            <div class="m-2 font-pixel text-xl text-black ">
+                White Feathers
+            </div>
+        </div>
+    </div>
+
+    <div  class="h-[45%] w-[28%] rounded-xl bg-green-500 fixed left-[33%] bottom-[4%] border-green-700 border-4 flex justify-center items-center">  
+        <div id="greenButton" class="h-[90%] w-[98%] bg-green-300 rounded-xl border-2 border-white text-center  hover:bg-green-400 ease-in duration-200">
+            <div class="m-2 font-pixel text-xl text-black ">
+                Dark Feathers
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="h-[45%] w-[28%] rounded-xl bg-yellow-500 fixed right-[11%] bottom-[4%] border-yellow-700 border-4 flex justify-center items-center">  
+        <div  id="yellowButton" class="h-[90%] w-[98%] bg-yellow-300 rounded-xl border-2 border-white text-center hover:bg-yellow-400 ease-in duration-200">
+            <div class="m-2 font-pixel text-xl text-black ">
+                Group Huddle
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="h-[45%] w-[28%] rounded-xl bg-blue-500 fixed right-[11%] top-[4%] border-blue-700 border-4 flex justify-center items-center">  
+        <div  id="blueButton" class="h-[90%] w-[98%] bg-blue-300 rounded-xl border-2 border-white text-center hover:bg-blue-400 ease-in duration-200">
+            <div class="m-2 font-pixel text-xl text-black ">
+                Swimming Speed
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div>
+
+
+
+{% endblock %}
+
+    

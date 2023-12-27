@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="fixed text-3xl text-white font-mono font-semibold top-[12%] left-[10%]"> Density Dependent Factors & Intraspecific Competition</div>
+<div class="fixed w-[20%] h-[56%] border-4 border-yellow-500 top-[23%] left-[48%] animate-fadeRight">
+    <div class="mt-5 ml-2 mr-1 text-white font-mono">
+        More density in a given area may mean increased difficulty to find space on ice. Especially with thinner ice mass in many areas of Antartica.
+        <br><br>
+        Penguins also do have viruses, which could be significant when so close by to each other.
+        <br>
+        Antarctic penguins have been found to have more than 15 viruses. Most of these are influenza A or avian avulavirus. There also exists a coronavirus amidst them. <sub>1</sub>
+   
+    </div>
+</div>
+
+<div class="fixed w-[20%] h-[56%] border-4 border-yellow-500 top-[23%] left-[70%] animate-fadeRight">
+    <div class="mt-5 ml-2 mr-1 text-white font-mono">
+       The density found in colonies is also a source of intraspecific competition. 
+       <br>
+       The size and density of colonies may make it difficult to find adequate space to raise an egg/chick safely.
+       So many penguins possibly hunting in one area also may make food scarce and contribute to waiting times for the male and chick as they wait for the female to come back.
+       However, that same factor also provides protection from predators and wind. 
+       
+    </div>
+</div>
+
+ <div  class="h-[50%] w-fit font-mono text-center text-white  font-normal border-2 border-yellow-500 fixed top-[27%] left-[10%] animate-fadeRight">
+        <img src="/static/images/pengVirusChart.png" class="h-full w-auto ">
+        <div>A chart of different penguin virus strains<sub>1</sub> <br> *not only including Emperors</div>
+    </div>
+
+    
+
+
+<a href="/comp-3">
+    <button id="pageButton" class="bg-green-700 transition-colors ease-in-out duration-500 hover:bg-yellow-500 border-green-700 text-white text-3xl font-semibold font-mono py-2 px-4 border h-[10%] w-[13%] rounded z-30 bottom-[10%] right-[10%] fixed">
+            Proceed
+    </button>
+ </a>
+
+{% endblock %}

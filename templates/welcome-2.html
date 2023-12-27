@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script src="{{ url_for('static', filename='js/cycle-4.js') }}"></script>
+
+
+<div class="z-20 text-5xl text-white font-mono font-semibold fixed top-[12%] left-[10%] animate-fadeDown"> 
+    This journey is about the <br>
+    <span class="underline text-yellow-500  hover:text-yellow-400 transition-colors ease-in-out duration-200">Aptenodytes forsteri</span> 
+</div>
+
+<div class="z-20 text-4xl text-white font-mono font-semibold fixed left-[10%] top-[35%] animate-fadeDown"> 
+    Name: 
+    <span class="underline text-yellow-500 hover:text-yellow-400 transition-colors ease-in-out duration-200">Emperor Penguin</span> 
+</div>
+
+<div class="z-20 text-4xl text-white font-mono font-semibold fixed left-[10%] top-[45%] animate-fadeDown"> 
+    Class:
+    <span class="underline text-yellow-500  hover:text-yellow-400 transition-colors ease-in-out duration-200">Aves(birds)</span> 
+</div>
+<div class="z-20 text-4xl text-white font-mono font-semibold fixed left-[10%] top-[55%] animate-fadeDown"> 
+    Diet:
+    <span class="underline text-yellow-500  hover:text-yellow-400 transition-colors ease-in-out duration-200">Carnivore</span> 
+</div>
+
+<div class="z-20 text-4xl text-white font-mono font-semibold fixed left-[10%] top-[65%] animate-fadeDown"> 
+    Size & Weight
+    <span class="underline text-yellow-500  hover:text-yellow-400 transition-colors ease-in-out duration-200">101-132cm tall, 25-45kg heavy</span> 
+</div>
+
+<div class="z-20 text-4xl text-white font-mono font-semibold fixed left-[10%] top-[75%] animate-fadeDown"> 
+    Wingspan
+    <span class="underline text-yellow-500  hover:text-yellow-400 transition-colors ease-in-out duration-200">72-82cm</span> 
+</div>
+
+<div class="h-[100%] w-fit fixed top-[20%] right-[10%] animate-fadeRight">
+    <img class ="h-full w-auto" src ="/static/images/grownPenguin.png">
+</div>
+
+<a href="/kingdom-1">
+    <button id="pageButton" class="bg-green-700 transition-colors ease-in-out duration-500 hover:bg-yellow-500 border-green-700 text-white text-3xl font-semibold font-mono py-2 px-4 border h-[10%] w-[13%] rounded z-30 bottom-[12%] right-[35%] fixed animate-fadeRight">
+        Proceed
+    </button>
+</a>
+
+{% endblock %}

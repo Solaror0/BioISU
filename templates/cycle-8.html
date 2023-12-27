@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script src="{{ url_for('static', filename='js/cycle-4.js') }}"></script>
+
+<div  class="h-[70%] w-fit font-mono text-center text-white  font-normal border-2 border-yellow-500 fixed top-[10%] left-[20%] ">
+    <img src="/static/images/Survivorship curve.png" class="h-full w-auto">
+    <div>Penguins have a type III survivorship curve, where the young die out at high rates <br> and the ones who survive have high survival rates. <br>
+        Emperor Penguin adults have survival rates of 90+ per year. <sub>1</sub>
+
+</div>
+
+<a href="/popu-1">
+    <button id="pageButton" class="bg-green-700 transition-colors ease-in-out duration-500 hover:bg-yellow-500 border-green-700 text-white text-3xl font-semibold font-mono py-2 px-4 border h-[10%] w-[13%] rounded z-30 bottom-[12%] right-[7%] fixed">
+        Proceed
+    </button>
+</a>
+
+{% endblock %}

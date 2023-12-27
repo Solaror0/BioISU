@@ -5,18 +5,24 @@
 <script src="{{ url_for('static', filename='js/smth.js') }}"></script>
 
 
-<div class="h-screen fixed left-40 top-14">
+<div class="h-screen fixed left-[10%] top-[11%]">
     <div class="font-mono text-5xl font-semibold text-white">A Treacherous Climate</div>
-    <div class="h-4/6 w-fit mt-5"><img src="/static/images/AntarcticHeatmap.png" class="h-full"></div>
+    <div class="h-4/6 w-fit mt-5 animate-fadeRight"><img src="/static/images/AntarcticHeatmap.png" class="h-full"></div>
 
 </div>
 
-<div class="border-8 border-yellow-500 h-4/6 w-96 right-96 top-36 absolute ">
+<div class="border-8 border-yellow-500 h-4/6 w-[24%] right-[20%] top-[21%] absolute animate-fadeRight ">
     <div class="ml-2 mt-2 text-2xl font-mono text-white">
     <span class="underline font-semibold">Climate</span> 
     <br><span class="underline">Ranging From</span> <br>-89.2 to -60 degrees celcius
-    <br><br><span class="underline">Mean Temperatures</span><br>-40 to -70 interior.<br>-20 to -30 at coast. <br><br> Midsummer Temperatures may as reach high as 15 Celsius.
+    <br><br><span class="underline">Mean Temperatures</span><br>-40 to -70 interior.<br>-20 to -30 at coast. <br><br> Midsummer Temperatures may as reach high as 15 Celsius.<sub>2</sub>
     </div>
 </div>
+
+<a href="/kingdom-3">
+    <button id="pageButton" class="bg-green-700 transition-colors ease-in-out duration-500 hover:bg-yellow-500 text-white text-3xl font-semibold font-mono py-2 px-4 border h-[30%] w-[13%] rounded z-30 top-[38%] right-[5%] fixed">
+        Proceed
+    </button>
+    </a>
 
 {% endblock %}

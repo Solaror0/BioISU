@@ -6,11 +6,20 @@
 <div class="flex justify-center text-5xl text-white font-mono font-semibold" id="kingdomtext">The Kingdom </div>
 <div class="flex justify-center text-3xl text-yellow-500 font-mono font-semibold">Antarctica </div>
 
+<div class="fixed text-2xl bottom-[35%] left-[5%] w-[15%] text-white font-mono font-semibold animate-fadeRight" id="kingdomtext">Use the slider to find the size of Antarctica!<sub>1</sub></div>
+
 
 <div class="flex justify-center w-auto h-auto ">
-    <img class="h-auto w-auto absolute m-0 mr-36" src="/static/images/AntarcticaBlank.svg" alt="image description">
-<div class = "font-mono absolute my-56 font-semibold text-4 text-5xl" ><div id="areanumber" class="inline">5  </div> Million Km^2</div>
+    <img class="h-auto w-auto absolute m-0 mr-36 animate-fadeDown" src="/static/images/AntarcticaBlank.svg" alt="image description">
+<div class = "font-mono absolute my-56 font-semibold text-4 text-5xl animate-fadeDown" ><div id="areanumber" class="inline">5  </div> Million Km^2</div>
       
-<div class = "relative translate-x-96 mt-52 right-20 h-6 rotate-90 w-3/12"><input type="range" min="0" max="14" step="1" id="continentslider" value="5" class="w-full"></div>
+<div class = "fixed mt-52 right-[15%] h-6 rotate-90 w-3/12"><input type="range" min="0" max="14" step="1" id="continentslider" value="5" class="w-full"></div>
+
+
+<a href="/kingdom-2">
+<button id="pageButton" class="bg-red-700 transition-colors ease-in-out duration-500 hover:bg-yellow-500 text-white font-semibold font-mono py-2 px-4 border h-[13%] w-[13%] rounded z-30 top-[40%] right-[10%] fixed">
+    Proceed/Skip
+</button>
+</a>
 
 {% endblock %}

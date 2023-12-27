@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script src="{{ url_for('static', filename='js/cycle-4.js') }}"></script>
+
+<div class="flex w-screen h-screen fixed top-[15%] justify-center">
+    <img class="h-4/6 w-auto absolute" src="/static/images/pengLove.png" alt="image description"></div>
+
+<div class="bg-yellow-500 h-[3%] w-[20%] fixed bottom-[15%] left-[41%] animate-fadeRight"></div>
+
+
+<div class="text-3xl font-semibold font-mono text-white top-[10%] fixed left-[15%] animate-fadeDown">Penguin Mating Facts</div>
+
+<div class="h-screen">
+    <div></div>
+    
+   
+    <div class="flex fixed items-start h-[40%] w-[20%] right-[15%] top-[30%] bg-blue-950">
+        <div class=" overflow-hidden border-4 h-[20%] border-yellow-500 w-[100%]  duration-300 ease-in-out hover:h-[74%] font-mono font-normal text-xl text-white">
+           <div class="ml-2 mt-2 font-normal"> <span class="font-semibold">A Time and Place </span>
+            <br> Breeding season is around December-April, the Antarctic Winter. During this time penguins can be seen up to 56 miles inland.<sub>1</sub> <br> <br> Worthy of an emperor
+           </div>
+           
+        </div>
+    </div>
+
+    <div class="flex fixed items-start h-[40%] w-[20%] right-[15%] top-[60%] bg-blue-950">
+        <div class=" overflow-hidden border-4 h-[20%] border-yellow-500 w-[100%]  duration-300 ease-in-out hover:h-[70%] font-mono font-normal text-xl text-white">
+           <div class="ml-2 mt-2 font-normal"> <span class="font-semibold">Semi-loyal partners </span>
+            <br>Penguins are serially monogamous, taking 1 partner per year. <sub>2</sub>
+           </div>
+           
+        </div>
+    </div>
+
+    <div class="flex fixed items-start h-[58%] w-[20%] left-[15%] top-[35%] bg-blue-950">
+        <div class=" overflow-hidden border-4 h-[20%] border-yellow-500 w-[100%]  duration-300 ease-in-out hover:h-[100%] font-mono font-normal text-xl text-white">
+           <div class="ml-2 mt-2 font-normal"> <span class="font-semibold">Food Issues</span>
+            <br> The male takes care of the chick while the female leaves go hunt for food, which can take around 2 months. 
+            In this time, the male can provide for the chick if needed with a special milk.
+            Since the start of the breeding season, the male will have gone without food for around 110 days.<sub>1</sub>,<sub>2</sub>
+           </div>
+           
+        </div>
+    </div>
+    <div class="h-[1%] w-[7%] bg-yellow-500 fixed top-[40%] left-[35%]"></div>
+
+
+   
+</div>
+
+<a href="/cycle-8">
+    <button id="pageButton" class="bg-green-700 transition-colors ease-in-out duration-500 hover:bg-yellow-500 border-green-700 text-white text-3xl font-semibold font-mono py-2 px-4 border h-[10%] w-[13%] rounded z-30 bottom-[12%] right-[7%] fixed">
+        Proceed
+    </button>
+</a>
+
+{% endblock %}

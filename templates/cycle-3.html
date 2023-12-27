@@ -2,8 +2,22 @@
 
 {% block content %}
 
-
+<script src="{{ url_for('static', filename='js/cycle-3.js') }}"></script>
 <div class="flex justify-center w-screen h-screen fixed top-1/4">
-    <img class="h-3/6 w-auto absolute" src="/static/images/PengEgg.png" alt="image description"></div>
-    
+    <img class="h-3/6 w-auto absolute animate-wiggle" src="/static/images/PengEgg.png" alt="image description"></div>
+
+<div class="h-3/6 w-4 top-[25%] left-[35%] fixed bg-yellow-500 animate-fadeDown"></div>
+<div class="text-5xl text-yellow-500 font-mono font-semibold fixed left-[14%] top-[45%]">11.4-12.7cm<sub>1</sub></div>
+<div class="text-3xl w-[20%] text-white font-mono  fixed right-[14%] top-[35%]">
+    <span class="font-semibold underline">LOW FECUNDITY</span>
+    <br><br>1 Female Lays 1 Egg per Breeding Season<sub>2</sub>
+</div>
+
+<a href="/cycle-4">
+<button class="fixed left-[46%] top-[80%] bg-transparent hover:bg-blue-800 text-yellow-500 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent rounded">
+   Speed Up Time
+  </button>
+</a>
+
+
 {% endblock %}

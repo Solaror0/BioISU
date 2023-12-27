@@ -4,10 +4,10 @@
 <script src="{{ url_for('static', filename='js/cycle-2.js') }}"></script>
 
 <div class="flex justify-center w-screen h-screen fixed top-1/4">
-    <img class="h-3/6 w-auto absolute" src="/static/images/PengEgg.png" alt="image description"></div>
+    <img class="h-3/6 w-auto absolute animate-wiggle" src="/static/images/PengEgg.png" alt="image description"></div>
 
-<div class = "fixed float-right  top-1/2 right-[20%] h-6 rotate-90 w-3/12 text-center text-3xl text-red-500 font-semibold font-mono">HEAT<input type="range" min="0" max="100" step="1" id="heatSlider" value="5" class="w-full"></div>
-<div class = "fixed ml-10 top-1/2 left-[20%] h-6 -rotate-90 w-3/12 text-center text-3xl text-red-500 font-semibold font-mono ">INCUBATION TIME<input type="range" min="0" max="100" step="1" id="timeSlider" value="5" class="w-full"></div>
+<div class = "fixed float-right  top-1/2 right-[20%] h-6 rotate-90 w-3/12 text-center text-3xl text-red-500 font-semibold font-mono">HEAT(Celcius)<input type="range" min="0" max="100" step="1" id="heatSlider" value="5" class="w-full"></div>
+<div class = "fixed ml-10 top-1/2 left-[20%] h-6 -rotate-90 w-3/12 text-center text-3xl text-red-500 font-semibold font-mono ">INCUBATION TIME(days)<input type="range" min="0" max="100" step="1" id="timeSlider" value="5" class="w-full"></div>
 
 <div class="text-5xl float-right bottom-[10%] right-[35%] font-mono font-semibold fixed text-red-700" id="heatDisplay">5</div>
 <div class="text-5xl float-right bottom-[10%] left-[37%] font-mono font-semibold fixed text-red-700" id="timeDisplay">5</div>
@@ -15,5 +15,18 @@
 <div class="flex fixed items-end h-96 w-16 border-black border-4 left-[27%] top-[25%]"><div class="bg-green-500 w-[100%]" id="timeGreenBar"></div></div>
 
 <div class="flex fixed items-end h-96 w-16 border-black border-4 right-[27%] top-[25%]"><div class="bg-green-500 w-[100%]" id="heatGreenBar"></div></div>
+
+
+<div class="fixed text-3xl bottom-[35%] left-[5%] w-[20%] top-[30%] text-white font-mono font-semibold animate-fadeRight" id="kingdomtext">
+    Use the sliders and find how long <sub>1</sub> and what temperature<sub>2</sub> it takes to incubate an egg. Pay attention to the bars!</div>
+
+
+
+<a href="/cycle-3">
+    <button id="pageButton" class="bg-green-700 transition-colors ease-in-out duration-500 hover:bg-yellow-500 border-green-700 text-white text-3xl font-semibold font-mono py-2 px-4 border h-[30%] w-[15%] rounded z-30 top-[38%] right-[5%] fixed">
+        Proceed/Skip
+    </button>
+    </a>
+
 
 {% endblock %}

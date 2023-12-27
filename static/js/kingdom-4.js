@@ -1,15 +1,25 @@
  
  window.onload=function(){
     const lowSpeedBox = document.getElementById("lowSpeedBox");
-    const medSpeedBox = document.getElementById("medSpeedBox")
+    const medSpeedBox = document.getElementById("medSpeedBox");
     const highSpeedBox = document.getElementById("highSpeedBox");
     const superSpeedBox1 = document.getElementById("superSpeedBox1");
-    
+    const pageButton = document.getElementById("pageButton");
+
     lowSpeedBox.addEventListener("mouseover",speedTrackOne);
     medSpeedBox.addEventListener("mouseover",speedTrackTwo);
     highSpeedBox.addEventListener("mouseover",speedTrackThree);
     superSpeedBox1.addEventListener("mouseover",speedTrackFour);
  }
+
+const tracker = 0;
+
+if (tracker==4){
+   const pageButton = document.getElementById("pageButton");
+   pageButton.classList.remove("bg-red-700")
+   pageButton.classList.add("bg-green-700")
+
+}
 
  function speedTrackOne(){
     let lowSpeedBoxValue = lowSpeedBox.value;
@@ -20,6 +30,7 @@
     SpeedText.classList.add('text-green-400');
     console.log(500)
     console.log(lowSpeedBoxValue)
+    tracker += 1
  }
  function speedTrackTwo(){
     const SpeedText = document.getElementById("medSpeedText");
@@ -28,6 +39,7 @@
     SpeedText.classList.remove('text-red-400');
     SpeedText.classList.add('text-green-400');
     console.log(600)
+    tracker += 1
 
  }
 function speedTrackThree(){
@@ -37,6 +49,7 @@ function speedTrackThree(){
     SpeedText.classList.remove('text-red-400');
     SpeedText.classList.add('text-green-400');
     console.log(700)
+    tracker += 1
 }
 
 function speedTrackFour(){
@@ -46,4 +59,5 @@ function speedTrackFour(){
     SpeedText.classList.remove('text-red-400');
     SpeedText.classList.add('text-green-400');
     console.log(800)
+    tracker += 1
 }

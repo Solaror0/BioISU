@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script src="{{ url_for('static', filename='js/cycle-4.js') }}"></script>
+<div class="h-screen w-screen cursor-[url(/static/images/BabyPenguinCursor.png),_pointer]">
+    <div class="fixed right-[20%] h-1/2" id="krillOne"><img class="h-full w-full"  src="/static/images/RegurgitatedKrill.png" alt=""></div>
+    <div class="fixed left-[20%] h-1/2 " id="krillTwo"><img class="h-full w-full" src="/static/images/RegurgitatedKrill.png" alt=""></div>
+    <div class="fixed left-[20%] top-[60%] h-1/4" id="fishOne" ><img class="h-full w-full" src="/static/images/RegurgitatedFish.png" alt=""></div>
+    <div class="fixed left-[45%] top-[50%] h-1/4" id="fishTwo" ><img class="h-full w-full" src="/static/images/RegurgitatedFish.png" alt=""></div>
+    <div class="fixed left-[65%] top-[60%] h-1/4" id="fishThree" ><img class="h-full w-full" src="/static/images/RegurgitatedFish.png" alt=""></div>
+</div>
+<div class="fixed  text-white font-mono font-semibold text-2xl right-[22%] bottom-[8%]">A Baby Penguin's Diet! Eat all the (regurgitated) krill and fish!<sub>1</sub> </div>
+
+<a href="/cycle-5">
+    <button id="pageButton" class="bg-green-700 transition-colors ease-in-out duration-500 hover:bg-yellow-500 border-green-700 text-white text-2xl font-semibold font-mono py-2 px-4 border h-[10%] w-[13%] rounded z-30 bottom-[7%] right-[5%] fixed">
+        Proceed/Skip
+    </button>
+</a>
+
+{% endblock %}
