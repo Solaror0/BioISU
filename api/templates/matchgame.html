@@ -6,20 +6,103 @@
 
 <script src="{{ url_for('static', filename='js/matchgame.js') }}"></script>
 
-<div class="grid grid-cols-4 grid-rows-3 gap-3 bg-red-400 h-[%] fixed top-[10%] w-[50%] left-[25%] z-10">
+<div class="font-mono text-white  absolute  top-[38%] z-30  w-[20%] left-[2%] border-4 border-yellow-500">
+<div class="text-xl p-3">
+    You're almost at the end of the journey: <br> try this matching game to test your knowledge! <br> Match the proper term to its description!</div>
+
+</div>
+
+<div class="font-mono text-white  absolute  top-[38%] z-30  w-[20%] right-[2%] border-4 border-yellow-500">
+    <div class="text-xl p-3">
+       Click anywhere not on the grid to deselect a card! Cards turn green when clicked.
+    
+    </div>
+
+<a href="/finish">
+    <button id="pageButton" class="bg-green-700 transition-colors ease-in-out duration-500 hover:bg-yellow-500 border-green-700 text-white text-3xl font-semibold font-mono py-2 px-4 border h-[10%] w-[13%] rounded z-30 bottom-[18%] left-[2%] fixed">
+        Proceed
+    </button>
+</a>
+
+<div id="parentGrid" class="grid grid-cols-4 grid-rows-3 gap-3 h-[%] fixed top-[10%] w-[50%] left-[25%] z-10">
  
  
-      
-    <div id="boxDarkFeathers1" class="h-[100%] w-fit border-2 border-yellow-500 rounded-xl bg-blue-950 flex items-center justify-center">
+    <!-- #1  DARK FEATHERS 1-->
+    <div id="boxDarkFeathers1" value="darkFeathers1" class="transition-all ease-in-out duration-1000 h-[100%] w-fit border-2 border-yellow-500 rounded-xl bg-blue-950 flex items-center justify-center">
         <img   src="/static/images/highResPengCardBackground.png" class="h-full w-auto  ease-in-out duration-700 hover:opacity-0 z-20"> 
         <div  class="z-10 font-times absolute font-serif text-white">Dark Feathers</div>   
     </div>
-    <!---->
-    <div  class="h-[100%] w-fit  border-2 border-yellow-500 rounded-xl">
 
-        <img src="/static/images/highResPengCardBackground.png" class="h-full w-auto  ease-in-out duration-700">
+    
+   <!-- #2 DARK FEATHERS 2 -->
+    <div id="boxDarkFeathers2"   value="darkFeathers2" class="transition-all  ease-in-out duration-1000 h-[100%] w-fit border-2 border-yellow-500 rounded-xl bg-blue-950 flex items-center justify-center">
+        <img   src="/static/images/highResPengCardBackground.png" class="h-full w-auto  ease-in-out duration-700 hover:opacity-0 z-20"> 
+        <div  class="z-10 font-times absolute font-serif text-white text-lg">Used to hide from <br> predators above</div>   
     </div>
-    <!---->
+
+    <!-- #3 ANTARCTICA SIZE 1 -->
+    <div id="aSize1" class="transition-all ease-in-out duration-1000 h-[100%] w-fit border-2 border-yellow-500 rounded-xl bg-blue-950 flex items-center justify-center">
+        <img   src="/static/images/highResPengCardBackground.png" class="h-full w-auto  ease-in-out duration-700 hover:opacity-0 z-20"> 
+        <div  class="z-10 font-times absolute font-serif text-white text-lg">Size of Antarctica</div>   
+    </div>
+
+    <!-- #4 WHITE FEATHER BOX 1 -->
+       <div id="wfBox1" class="transition-all ease-in-out duration-1000 h-[100%] w-fit border-2 border-yellow-500 rounded-xl bg-blue-950 flex items-center justify-center">
+        <img   src="/static/images/highResPengCardBackground.png" class="h-full w-auto  ease-in-out duration-700 hover:opacity-0 z-20"> 
+        <div  class="z-10 font-times absolute font-serif text-white">White Feathers</div>   
+    </div>
+
+    <!-- #5 PREDATOR RELATIONSHIP #1-->
+       <div id="predators1" class=" transition-all ease-in-out duration-1000 h-[100%] w-fit border-2 border-yellow-500 rounded-xl bg-blue-950 flex items-center justify-center">
+        <img   src="/static/images/highResPengCardBackground.png" class="h-full w-auto  ease-in-out duration-700 hover:opacity-0 z-20"> 
+        <div  class="z-10 font-times absolute font-serif text-white text-lg text-center">Leopard Seals and Killer Whales</div>   
+    </div>
+
+    <!-- #6 Survivorship Curve Type 1-->
+      <div id="sCurve1" class="transition-all ease-in-out duration-1000 h-[100%] w-fit border-2 border-yellow-500 rounded-xl bg-blue-950 flex items-center justify-center">
+        <img   src="/static/images/highResPengCardBackground.png" class="h-full w-auto  ease-in-out duration-700 hover:opacity-0 z-20"> 
+        <div  class="z-10 font-times absolute font-serif text-white">The Type of<br> Survivorship Curve <br> of Emperor Penguins</div>   
+    </div>
+  
+
+    <!-- #7 Population Dispersion Type 1 -->
+     <div id="pDist1" class="transition-all ease-in-out duration-1000 h-[100%] w-fit border-2 border-yellow-500 rounded-xl bg-blue-950 flex items-center justify-center">
+        <img   src="/static/images/highResPengCardBackground.png" class="h-full w-auto  ease-in-out duration-700 hover:opacity-0 z-20"> 
+        <div  class="z-10 font-times absolute font-serif text-white text-lg ">Clumped Dispersion</div>   
+    </div>
+  
+    <!-- #8  ANTARCTICA SIZE 2 -->
+    <div id="aSize2" class="transition-all ease-in-out duration-1000 h-[100%] w-fit border-2 border-yellow-500 rounded-xl bg-blue-950 flex items-center justify-center">
+        <img   src="/static/images/highResPengCardBackground.png" class="h-full w-auto  ease-in-out duration-700 hover:opacity-0 z-20"> 
+        <div  class="z-10 font-times absolute font-serif text-white text-lg">14.2 million km^2</div>   
+    </div>
+  
+    <!-- #9 Survivorship Curve Type 2-->
+      <div id="sCurve2" class="transition-all ease-in-out duration-1000 h-[100%] w-fit border-2 border-yellow-500 rounded-xl bg-blue-950 flex items-center justify-center">
+        <img   src="/static/images/highResPengCardBackground.png" class="h-full w-auto  ease-in-out duration-700 hover:opacity-0 z-20"> 
+        <div  class="z-10 font-times absolute font-serif text-white text-lg">Type III Curve</div>   
+    </div>
+  
+   <!-- #10 WHITE FEATHER BOX 2-->
+      <div id="wfBox2" class="transition-all ease-in-out duration-1000 h-[100%] w-fit border-2 border-yellow-500 rounded-xl bg-blue-950 flex items-center justify-center">
+        <img   src="/static/images/highResPengCardBackground.png" class="h-full w-auto  ease-in-out duration-700 hover:opacity-0 z-20"> 
+        <div  class="z-10 font-times absolute font-serif text-white ">Used to hide from <br> predators below</div>   
+    </div>
+
+    <!-- #11 POPULATION DISPERSION TYPE 2 -->
+       <div id="pDist2" class="transition-all ease-in-out duration-1000 h-[100%] w-fit border-2 border-yellow-500 rounded-xl bg-blue-950 flex items-center justify-center">
+        <img   src="/static/images/highResPengCardBackground.png" class="h-full w-auto  ease-in-out duration-700 hover:opacity-0 z-20"> 
+        <div  class="z-10 font-times absolute font-serif text-white text-lg">Population Spatial <br>Distribution Type</div>   
+    </div>
+
+    
+    <!-- #12 PREDATOR RELATIONSHIP #2-->
+    <div id="predators2" class="transition-all ease-in-out duration-1000 h-[100%] w-fit border-2 border-yellow-500 rounded-xl bg-blue-950 flex items-center justify-center">
+        <img   src="/static/images/highResPengCardBackground.png" class="h-full w-auto  ease-in-out duration-700 hover:opacity-0 z-20"> 
+        <div  class="z-10 font-times absolute font-serif text-white text-lg">Main predators of <br> adult penguins</div>   
+    </div>
+  
 </div>
 
 {% endblock %}
+

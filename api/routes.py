@@ -6,8 +6,6 @@ app = Flask(__name__)
 def default():
     return render_template('welcome.html')
 
-
-
 @app.route('/welcome-2')
 def welcome2():
     return render_template('welcome-2.html')
