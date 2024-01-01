@@ -37,7 +37,7 @@
  const hiddenBg = document.getElementById("hiddenBg");
  hiddenBg.addEventListener("click",bgFunction);
 
-
+ console.log("0")
  }
 
 let bgClick = Boolean
